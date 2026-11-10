@@ -1,0 +1,215 @@
+ <!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>دليل الألوان: اختاري ألوان مشروعك</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#F6F5FF;--surface:#FFFFFF;--ink:#1E1B4B;--muted:#475569;--line:#D9D6F5;--accent:#4338CA;--accent-ink:#FFFFFF;--tint:#E0E7FF;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15133A;--surface:#1E1B4B;--ink:#F1F5F9;--muted:#C7D2FE;--line:#3B3790;--accent:#A5B4FC;--accent-ink:#1E1B4B;--tint:#312E81}}
+:root[data-theme="dark"]{--bg:#15133A;--surface:#1E1B4B;--ink:#F1F5F9;--muted:#C7D2FE;--line:#3B3790;--accent:#A5B4FC;--accent-ink:#1E1B4B;--tint:#312E81}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Tajawal',Tahoma,sans-serif;line-height:1.6}
+main{max-width:980px;margin:0 auto;padding:28px 18px 48px;display:flex;flex-direction:column;gap:28px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.15;margin:0;font-weight:800}
+h2{font-size:24px;margin:0 0 4px;font-weight:800}
+p{margin:0}
+.sub{color:var(--muted);font-size:18px;max-width:60ch}
+section{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+button{font:inherit;color:inherit;cursor:pointer}
+.chip{background:var(--bg);border:1.5px solid var(--line);border-radius:999px;padding:10px 18px;font-weight:700;min-height:44px}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.fam{background:var(--bg);border:1.5px solid var(--line);border-radius:14px;padding:10px 16px;font-weight:700;min-height:44px;display:flex;align-items:center;gap:10px}
+.fam[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px var(--tint)}
+.dot{width:22px;height:22px;border-radius:50%;border:1px solid rgba(0,0,0,.25);flex:none}
+.meaning{background:var(--tint);border-radius:14px;padding:14px 16px;display:grid;gap:2px}
+.meaning b{font-size:20px}
+.shades{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.sw{height:84px;border-radius:14px;border:2px solid rgba(0,0,0,.18);position:relative;min-height:44px;font-weight:700;font-size:14px;display:flex;align-items:flex-end;justify-content:center;padding:6px;direction:ltr}
+.sw:focus-visible,.chip:focus-visible,.fam:focus-visible,.slot:focus-visible,.act:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.slot{background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:10px;display:flex;flex-direction:column;gap:8px;text-align:right;min-height:44px}
+.slot[aria-pressed="true"]{border-color:var(--accent);box-shadow:0 0 0 3px var(--tint)}
+.slot .c{height:44px;border-radius:10px;border:1px solid rgba(0,0,0,.25)}
+.slot small{color:var(--muted);direction:ltr;text-align:right;font-size:15px}
+.layout{display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:820px){.layout{grid-template-columns:1.1fr .9fr;align-items:start}}
+label{font-weight:700}
+input{font:inherit;background:var(--bg);color:var(--ink);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;min-height:44px;width:100%}
+.card{border-radius:18px;padding:26px;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;border:1px solid rgba(0,0,0,.2);transition:background .2s}
+.logo{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:800}
+.card h3{margin:0;font-size:32px;font-weight:800;line-height:1.2}
+.tag{align-self:flex-start;border-radius:999px;padding:4px 16px;font-weight:700;font-size:17px}
+.bar{height:8px;border-radius:4px}
+.act{background:var(--accent);color:var(--accent-ink);border:0;border-radius:12px;padding:12px 20px;font-weight:800;min-height:44px}
+.act.alt{background:var(--bg);color:var(--ink);border:1.5px solid var(--line)}
+.go{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>دليل الألوان: اختاري ألوان مشروعك</h1>
+<p class="sub">اختاري نوع مشروعك، ثم اختاري ثلاثة ألوان من الدليل، وشاهدي النتيجة على بطاقة عمل مباشرة.</p>
+</header>
+
+<div class="layout">
+<div style="display:flex;flex-direction:column;gap:28px">
+<section>
+<h2>1. ما نوع مشروعك؟</h2>
+<div class="row" id="types"></div>
+</section>
+<section>
+<h2>2. اختاري من دليل الألوان</h2>
+<div class="row" id="fams"></div>
+<div class="meaning" id="meaning"></div>
+<div class="shades" id="shades"></div>
+<p class="sub" style="font-size:16px">اضغطي على أي درجة لوضعها في الخانة المحددة أدناه.</p>
+</section>
+<section>
+<h2>3. لوحتك اللونية</h2>
+<div class="slots" id="slots"></div>
+</section>
+</div>
+
+<section style="position:sticky;top:12px">
+<h2>معاينة بطاقة العمل</h2>
+<label for="pname">اسم المشروع</label>
+<input id="pname" value="مخبزي" maxlength="22" autocomplete="off">
+<div class="card" id="card">
+<div class="logo" id="logo">م</div>
+<div><h3 id="cname">مخبزي</h3><div class="bar" id="bar" style="margin-top:12px"></div></div>
+<span class="tag" id="ctag">أصالة وجودة</span>
+</div>
+<div class="go">
+  <button class="act" id="copy" type="button">نسخ ألوان اللوحة</button>
+  <button class="act alt" id="reset" type="button">إعادة الضبط</button>
+  <span id="msg" role="status" style="font-weight:700;color:var(--accent);"></span>
+</div>
+</section>
+</div>
+</main>
+
+<script>
+var FAMS=[
+{n:"الأزرق",m:"الثقة والأمان والاحترافية",u:"المنصات التقنية والتعليمية",s:["#1E3A8A","#2563EB","#60A5FA","#BFDBFE","#EFF6FF"]},
+{n:"الأخضر",m:"النمو والطبيعة والاستدامة",u:"المنتجات العضوية والمشاريع البيئية",s:["#14532D","#15803D","#4ADE80","#BBF7D0","#F0FDF4"]},
+{n:"الأصفر والبرتقالي",m:"الطاقة والحيوية والمرح",u:"المخابز والأغذية ومشاريع الأطفال",s:["#9A3412","#EA580C","#F59E0B","#FDE68A","#FFFBEB"]},
+{n:"الوردي والباستيل",m:"النعومة واللطف والإبداع",u:"الحرف اليدوية والهدايا التذكارية",s:["#9D174D","#DB2777","#F472B6","#FBCFE8","#FDF2F8"]},
+{n:"ألوان محايدة",m:"التوازن والوضوح",u:"النصوص والخلفيات في كل المشاريع",s:["#111827","#4B5563","#9CA3AF","#E5E7EB","#FFFFFF"]}];
+
+var TYPES=[
+{n:"مخبز أو أغذية",f:2,name:"مخبزي",tag:"أصالة وجودة",p:["#EA580C","#FFFBEB","#9A3412"]},
+{n:"منصة تعليمية",f:0,name:"منصتي",tag:"تعلّم بثقة",p:["#2563EB","#EFF6FF","#1E3A8A"]},
+{n:"مشروع بيئي",f:1,name:"بيئتي",tag:"طبيعة مستدامة",p:["#15803D","#F0FDF4","#14532D"]},
+{n:"حرف وهدايا",f:3,name:"لمستي",tag:"صُنع بحب",p:["#DB2777","#FDF2F8","#9D174D"]}];
+
+var ROLES=["اللون الرئيسي","اللون الثانوي","لون الإبراز"];
+var st={fam:2,slot:0,pal:TYPES[0].p.slice(),type:0};
+var $=function(i){return document.getElementById(i)};
+
+function lum(h){
+  var c=[1,3,5].map(function(i){var v=parseInt(h.substr(i,2),16)/255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4)});
+  return 0.2126*c[0]+0.7152*c[1]+0.0722*c[2];
+}
+function ratio(a,b){var x=lum(a),y=lum(b);return (Math.max(x,y)+0.05)/(Math.min(x,y)+0.05)}
+function on(bg){return ratio(bg,"#FFFFFF")>=ratio(bg,"#111827")?"#FFFFFF":"#111827"}
+
+function render(){
+  $("types").innerHTML="";
+  TYPES.forEach(function(t,i){
+    var b=document.createElement("button");
+    b.className="chip";b.type="button";b.textContent=t.n;
+    b.setAttribute("aria-pressed",st.type===i);
+    b.onclick=function(){
+      st.type=i;st.fam=t.f;st.pal=t.p.slice();st.slot=0;
+      $("pname").value=t.name;
+      render();
+    };
+    $("types").appendChild(b);
+  });
+
+  $("fams").innerHTML="";
+  FAMS.forEach(function(f,i){
+    var b=document.createElement("button");
+    b.className="fam";b.type="button";
+    b.setAttribute("aria-pressed",st.fam===i);
+    b.innerHTML='<span class="dot" style="background:'+f.s[1]+'"></span>'+f.n;
+    b.onclick=function(){st.fam=i;render();};
+    $("fams").appendChild(b);
+  });
+
+  var f=FAMS[st.fam];
+  $("meaning").innerHTML="<b>"+f.n+"</b><span>الأثر النفسي: "+f.m+"</span><span>الاستخدام المناسب: "+f.u+"</span>";
+  
+  $("shades").innerHTML="";
+  f.s.forEach(function(h){
+    var b=document.createElement("button");
+    b.className="sw";b.type="button";b.style.background=h;b.style.color=on(h);
+    b.textContent=h;b.setAttribute("aria-label","اختيار اللون "+h);
+    b.onclick=function(){
+      st.pal[st.slot]=h;
+      st.slot=(st.slot+1)%3;
+      render();
+    };
+    $("shades").appendChild(b);
+  });
+
+  $("slots").innerHTML="";
+  ROLES.forEach(function(r,i){
+    var b=document.createElement("button");
+    b.className="slot";b.type="button";
+    b.setAttribute("aria-pressed",st.slot===i);
+    b.innerHTML='<span><b>'+r+'</b></span><span class="c" style="background:'+st.pal[i]+'"></span><small>'+st.pal[i]+'</small>';
+    b.onclick=function(){st.slot=i;render();};
+    $("slots").appendChild(b);
+  });
+
+  var p=st.pal, nm=$("pname").value.trim()||"اسم مشروعك";
+  $("card").style.background=p[1];
+  $("cname").textContent=nm;
+  $("cname").style.color=p[0];
+  $("logo").textContent=nm.charAt(0);
+  $("logo").style.background=p[0];
+  $("logo").style.color=on(p[0]);
+  $("bar").style.background=p[2];
+  $("ctag").style.background=p[2];
+  $("ctag").style.color=on(p[2]);
+  $("ctag").textContent=TYPES[st.type].tag;
+  
+  try{localStorage.setItem("pal",JSON.stringify(st))}catch(e){}
+}
+
+$("pname").oninput=function(){
+  var nm=this.value.trim()||"اسم مشروعك";
+  $("cname").textContent=nm;
+  $("logo").textContent=nm.charAt(0);
+};
+
+$("reset").onclick=function(){
+  st={fam:2,slot:0,pal:TYPES[0].p.slice(),type:0};
+  $("pname").value="مخبزي";
+  $("msg").textContent="";
+  render();
+};
+
+$("copy").onclick=function(){
+  var t=ROLES.map(function(r,i){return r+": "+st.pal[i]}).join("\n");
+  var successMsg=function(){$("msg").textContent="تم نسخ الألوان بنجاح! ✨";};
+  try{
+    navigator.clipboard.writeText(t).then(successMsg,function(){
+      $("msg").textContent=st.pal.join("  ");
+    });
+  }catch(e){
+    $("msg").textContent=st.pal.join("  ");
+  }
+};
+
+render();
+</script>
+</body>
+</html>
